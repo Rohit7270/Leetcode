@@ -11,10 +11,11 @@ class Solution {
                     q.offer(new Pair(row, col, 0));
                     vis[row][col] = 2;
                 }
+                else if(grid[row][col] == 1) temp++;
                 else{
                     vis[row][col] = 0;
                 }
-                if(grid[row][col] == 1) temp++;
+                
             }
         }
         int[] nrow = {-1, 0, 1, 0};
