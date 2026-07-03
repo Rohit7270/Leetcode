@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0542-01-matrix](https://github.com/Rohit7270/Leetcode/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/Rohit7270/Leetcode/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/Rohit7270/Leetcode/tree/master/0733-flood-fill) |
+| [0802-find-eventual-safe-states](https://github.com/Rohit7270/Leetcode/tree/master/0802-find-eventual-safe-states) |
 | [0994-rotting-oranges](https://github.com/Rohit7270/Leetcode/tree/master/0994-rotting-oranges) |
 ## Matrix
 |  |
@@ -35,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/Rohit7270/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/Rohit7270/Leetcode/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/Rohit7270/Leetcode/tree/master/0733-flood-fill) |
+| [0802-find-eventual-safe-states](https://github.com/Rohit7270/Leetcode/tree/master/0802-find-eventual-safe-states) |
 ## Union-Find
 |  |
 | ------- |
@@ -46,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Rohit7270/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Rohit7270/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/Rohit7270/Leetcode/tree/master/0547-number-of-provinces) |
+| [0802-find-eventual-safe-states](https://github.com/Rohit7270/Leetcode/tree/master/0802-find-eventual-safe-states) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -55,4 +58,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/Rohit7270/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Rohit7270/Leetcode/tree/master/0210-course-schedule-ii) |
+| [0802-find-eventual-safe-states](https://github.com/Rohit7270/Leetcode/tree/master/0802-find-eventual-safe-states) |
 <!---LeetCode Topics End-->
