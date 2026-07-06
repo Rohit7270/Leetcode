@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Rohit7270/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0130-surrounded-regions](https://github.com/Rohit7270/Leetcode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/Rohit7270/Leetcode/tree/master/0200-number-of-islands) |
 | [0542-01-matrix](https://github.com/Rohit7270/Leetcode/tree/master/0542-01-matrix) |
@@ -77,4 +78,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/Rohit7270/Leetcode/tree/master/0022-generate-parentheses) |
+## Two Pointers
+|  |
+| ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Rohit7270/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 <!---LeetCode Topics End-->
