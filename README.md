@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/Rohit7270/Leetcode/tree/master/0022-generate-parentheses) |
 | [0542-01-matrix](https://github.com/Rohit7270/Leetcode/tree/master/0542-01-matrix) |
 ## Topological Sort
 |  |
@@ -68,4 +69,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Rohit7270/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Rohit7270/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0802-find-eventual-safe-states](https://github.com/Rohit7270/Leetcode/tree/master/0802-find-eventual-safe-states) |
+## String
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/Rohit7270/Leetcode/tree/master/0022-generate-parentheses) |
+## Backtracking
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/Rohit7270/Leetcode/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->
