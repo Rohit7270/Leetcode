@@ -24,6 +24,7 @@ class Solution {
             int distance = p.first;
             int x = p.second;
             int y = p.third;
+            if(distance > dis[x][y]) continue;
             for(int i = 0; i< 8; i++){
                 int row = x + nrow[i];
                 int col = y + ncol[i];
