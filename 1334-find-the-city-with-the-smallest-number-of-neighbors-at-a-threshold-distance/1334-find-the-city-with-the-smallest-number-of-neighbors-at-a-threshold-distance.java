@@ -1,11 +1,9 @@
 class Solution {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
-        int[][] dis = new int[n][n];
+        ArrayList<ArrayList<Pair>> adj = new ArrayList<>();
 
         for(int i = 0; i< n; i++){
-            for(int j = 0; j< n; j++){
-                dis[i][j] = (int)1e9;
-            }
+            adj.add(new ArrayList<>());
         }
 
         for(int[] edge: edges){
@@ -13,35 +11,54 @@ class Solution {
             int v = edge[1];
             int wt = edge[2];
 
-            dis[u][v] = wt;
-            dis[v][u] = wt;
-        }
-
-        for(int i = 0; i< n; i++) dis[i][i] = 0;
-
-        for(int via = 0; via< n; via++){
-            for(int i = 0; i< n; i++){
-                for(int j = 0; j< n; j++){
-                    if(dis[i][via] == (int)1e9 || dis[via][j] == (int)1e9) continue;
-                    dis[i][j] = Math.min(dis[i][j], dis[i][via] + dis[via][j]);
-                }
-            }
+            adj.get(u).add(new Pair(v, wt));
+            adj.get(v).add(new Pair(u, wt));
         }
         int max = n;
         int cityno = -1;
 
-        for(int i = 0; i< n; i++){
+        for(int src = 0; src< n; src++){
+            int[] dis = new int[n];
+            Arrays.fill(dis, Integer.MAX_VALUE);
+            dis[src] = 0;
+
+            PriorityQueue<Pair> pq = new PriorityQueue<Pair>((a, b) -> a.second - b.second);
+            pq.offer(new Pair(src, 0));
+
+            while(!pq.isEmpty()){
+                Pair p = pq.poll();
+                int node = p.first;
+                int distance = p.second;
+                if(distance > dis[node]) continue;
+                for(Pair it : adj.get(node)){
+                    int next = it.first;
+                    int edgewt = it.second;
+                    if(distance + edgewt < dis[next]){
+                        dis[next] = distance + edgewt;
+                        pq.offer(new Pair(next, dis[next]));
+                    }
+                }
+            }
             int cnt = 0;
-            for(int j = 0; j< n; j++){
-                if(dis[i][j] <= distanceThreshold){
+            for(int i = 0; i< n; i++){
+                if(dis[i] <= distanceThreshold){
                     cnt++;
-                }                
+                }
             }
             if(cnt <= max){
                 max = cnt;
-                cityno = i;
+                cityno = src;
             }
         }
+        
         return cityno;
+    }
+    class Pair{
+        int first;
+        int second;
+        Pair(int first, int second){
+            this.first = first;
+            this.second = second;
+        }
     }
 }
