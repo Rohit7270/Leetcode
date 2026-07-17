@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Rohit7270/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0130-surrounded-regions](https://github.com/Rohit7270/Leetcode/tree/master/0130-surrounded-regions) |
+| [0198-house-robber](https://github.com/Rohit7270/Leetcode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/Rohit7270/Leetcode/tree/master/0200-number-of-islands) |
 | [0542-01-matrix](https://github.com/Rohit7270/Leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/Rohit7270/Leetcode/tree/master/0733-flood-fill) |
@@ -85,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/Rohit7270/Leetcode/tree/master/0022-generate-parentheses) |
+| [0198-house-robber](https://github.com/Rohit7270/Leetcode/tree/master/0198-house-robber) |
 | [0509-fibonacci-number](https://github.com/Rohit7270/Leetcode/tree/master/0509-fibonacci-number) |
 | [0542-01-matrix](https://github.com/Rohit7270/Leetcode/tree/master/0542-01-matrix) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Rohit7270/Leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
