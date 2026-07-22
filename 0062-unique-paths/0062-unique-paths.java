@@ -1,18 +1,24 @@
 class Solution {
     public int uniquePaths(int m, int n) {
-        int[][] dp = new int[m][n];
-        for(int i = 0; i< m; i++){
-            Arrays.fill(dp[i], -1);
+        int[] dp = new int[n];
+        for(int row = 0; row< m; row++){
+            int[] temp = new int[n];
+            for(int col = 0; col< n; col++){
+                if(row == 0 && col == 0) temp[col] = 1;
+                else{
+                    int down = 0;
+                    if(row > 0){
+                        down = dp[col];
+                    }
+                    int right = 0;
+                    if(col > 0){
+                        right = temp[col-1];
+                    }
+                    temp[col] = down + right;
+                }
+            }
+            dp = temp;
         }
-        return path(m-1, n-1, dp);
+        return dp[n-1];
     }
-    private int path(int row, int col, int[][] dp){
-        if(row == 0 && col == 0) return 1;
-        if(row < 0 || col < 0) return 0;
-        if(dp[row][col] != -1) return dp[row][col];
-        int up = path(row-1, col, dp);
-        int left = path(row, col-1, dp);
-        return dp[row][col] = (left+up);
-    }
-    
 }
