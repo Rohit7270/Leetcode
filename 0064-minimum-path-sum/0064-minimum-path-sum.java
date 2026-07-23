@@ -3,23 +3,21 @@ class Solution {
         int n = grid.length;
         int m = grid[0].length;
         int[][] dp = new int[n][m];
-        for(int i = 0; i< n; i++){
-            Arrays.fill(dp[i], -1);
+        dp[0][0] = grid[0][0];
+        for(int row = 0; row< n; row++){
+            for(int col = 0; col < m; col++){
+                if(row == 0 && col == 0) continue;
+                int right = Integer.MAX_VALUE;
+                if(col > 0){
+                    right = grid[row][col] + dp[row][col-1];
+                }
+                int down = Integer.MAX_VALUE;
+                if(row > 0){
+                    down = grid[row][col] + dp[row-1][col];
+                }
+                dp[row][col] = Math.min(right, down);
+            }
         }
-        return minimal(n-1, m-1, grid, dp);
-    }
-    private int minimal(int row, int col, int[][] arr, int[][] dp){
-        if(row == 0 && col == 0) return arr[0][0];
-        if(row < 0 || col < 0) return Integer.MAX_VALUE;
-        if(dp[row][col] != -1) return dp[row][col];
-        int up = minimal(row-1, col, arr, dp);
-        if(up != Integer.MAX_VALUE){
-            up += arr[row][col];
-        }
-        int left = minimal(row, col-1, arr, dp);
-        if(left != Integer.MAX_VALUE){
-            left += arr[row][col];
-        }
-        return dp[row][col] = Math.min(up, left);
+        return dp[n-1][m-1];
     }
 }
