@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Rohit7270/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0039-combination-sum](https://github.com/Rohit7270/Leetcode/tree/master/0039-combination-sum) |
 | [0042-trapping-rain-water](https://github.com/Rohit7270/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0063-unique-paths-ii](https://github.com/Rohit7270/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Rohit7270/Leetcode/tree/master/0064-minimum-path-sum) |
@@ -127,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/Rohit7270/Leetcode/tree/master/0022-generate-parentheses) |
+| [0039-combination-sum](https://github.com/Rohit7270/Leetcode/tree/master/0039-combination-sum) |
 ## Two Pointers
 |  |
 | ------- |
